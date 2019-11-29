@@ -4,6 +4,7 @@
   &::after {
     box-sizing: border-box;
     -webkit-overflow-scrolling: touch;
+    font-weight: 300;
   }
 }
 
@@ -61,3 +62,20 @@ h1 {
   }
 }
 
+input[type="email"],
+input[type="text"] {
+  display: inline-block;
+  padding: 9px 10px;
+  border-radius: 3px;
+  border: 1px solid rgba($blue,0.4);
+  transition: $transition;
+
+  &:hover {
+    border-color: rgba($blue,0.6);
+  }
+
+  &:focus {
+    border-color: rgba($blue,0.85);
+    outline: 0;
+  }
+}

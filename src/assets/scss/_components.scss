@@ -11,3 +11,26 @@
 .blue {
   color: $blue !important;
 }
+
+.button {
+  display: inline-block;
+  padding: 9px 13px;
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 3px;
+  box-shadow: 0 3px 5px rgba($blue, 0.25);
+  color: $f;
+  cursor: pointer;
+  transition: $transition;
+
+  &:focus {
+    outline: 0;
+    background-color: darken($blue, 5%) !important;
+    border-color: darken($blue, 5%) !important;
+  }
+
+  &:hover {
+    background-color: lighten($blue, 5%);
+    border-color: lighten($blue, 5%);
+  }
+}
