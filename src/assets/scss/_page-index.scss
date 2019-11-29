@@ -1,0 +1,45 @@
+.index {
+  &-hero {
+    position: relative;
+    height: 100vh;
+
+    .arrow-img {
+      position: absolute;
+      z-index: 0;
+      width: 900px;
+      top: 50px;
+      left: calc(50% + 350px);
+      transform: translateX(-50%);
+
+      @media only screen and (max-width: 1200px) {
+        left: calc(50% + 425px);
+      }
+
+      @media only screen and (max-width: 767px) {
+        width: 120%;
+        left: 5%;
+        top: 300px;
+        transform: unset;
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+    }
+
+    &__wrapper {
+      max-width: 410px;
+      padding-top: 180px;
+
+      @media only screen and (max-width: 979px) {
+        padding-top: 50px;
+      }
+
+      h1 {
+        margin-top: 15px;
+      }
+    }
+  }
+}
