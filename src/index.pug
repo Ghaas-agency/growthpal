@@ -4,7 +4,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Growth Pal - Intelligent Tools, Delivering Result and Opening Infinite Possibilities.
+    title Growthpal - Faster, More Accessible, and Personalised Funding And Acquisitions
 
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap")
     link(rel="stylesheet", href="assets/css/style.css")
@@ -28,47 +28,73 @@ html(lang="en")
     meta(name='theme-color', content='#ffffff')
 
     // Search Engine
-    meta(name='description', content='Intelligent Tools For Fundraising, Category Leadership, And Acquisitions.')
+    meta(name='description', content='Intelligence Solutions that provide recommendations and deliver results for funding, acquisitions and investment, helping you close deals.')
     meta(name='image', content='assets/img/growthpal-meta.jpg')
     // Schema.org for Google
-    meta(itemprop='name', content="Growth Pal - Intelligent Tools, Delivering Result and Opening Infinite Possibilities.")
-    meta(itemprop='description', content='Intelligent Tools For Fundraising, Category Leadership, And Acquisitions.')
+    meta(itemprop='name', content="Growthpal - Faster, More Accessible, and Personalised Funding And Acquisitions")
+    meta(itemprop='description', content='Intelligence Solutions that provide recommendations and deliver results for funding, acquisitions and investment, helping you close deals.')
     meta(itemprop='image', content='assets/img/growthpal-meta.jpg')
     // Twitter
     meta(name='twitter:card', content='summary')
-    meta(name='twitter:title', content="Growth Pal - Intelligent Tools, Delivering Result and Opening Infinite Possibilities.")
-    meta(name='twitter:description', content='Intelligent Tools For Fundraising, Category Leadership, And Acquisitions.')
-    meta(name='twitter:site', content='@dist_sys')
-    meta(name='twitter:creator', content='@dist_sys')
+    meta(name='twitter:title', content="Growthpal - Faster, More Accessible, and Personalised Funding And Acquisitions")
+    meta(name='twitter:description', content='Intelligence Solutions that provide recommendations and deliver results for funding, acquisitions and investment, helping you close deals.')
+    meta(name='twitter:site', content='')
+    meta(name='twitter:creator', content='')
     meta(name='twitter:image:src', content='assets/img/growthpal-meta.jpg')
     // Open Graph general (Facebook, Pinterest & Google+)
-    meta(name='url', property='og:url', content='https://dsconf.in')
-    meta(name='site_name', property='og:site_name', content='DSConf 2020')
-    meta(name='title', property='og:title', content="Growth Pal - Intelligent Tools, Delivering Result and Opening Infinite Possibilities.")
+    meta(name='url', property='og:url', content='https://www.growthpal.com')
+    meta(name='site_name', property='og:site_name', content='GrowthPal')
+    meta(name='title', property='og:title', content="Growthpal - Faster, More Accessible, and Personalised Funding And Acquisitions")
     meta(name='type', property='og:type', content='website')
     meta(name='image', property='og:image', content='assets/img/growthpal-meta.jpg')
-    meta(name='description', property='og:description', content='Intelligent Tools For Fundraising, Category Leadership, And Acquisitions.')
+    meta(name='description', property='og:description', content='Intelligence Solutions that provide recommendations and deliver results for funding, acquisitions and investment, helping you close deals.')
   body
 
     main.index
 
       section.index-hero
-        img.arrow-img(src="assets/img/growthpal-arrow-up.png", alt="growthpal arrow up")
         .container
           .index-hero__wrapper
             img(src="assets/img/growthpal-logo.png", alt="GrowthPal logo", width="150")
-            h1.blue Infinite Possibilities.
-              br
-              | Intelligent Tools.
-              br
-              | Delivering Results.
-            p.blue Faster and More Accessible Way to Fundraising, Category Leadership and Acquisitions.
+            p.italic Faster, Accessible, and Personalized Fundraising &amp; Acquisitions
+            h1.uppercase Intelligence That Delivers Results.
+            p.blue.subhead Actionable Recommendations. Closed Deals.
             .form-container
               form#contact-form(action='https://formspree.io/xnqnjedb', method='POST')
                 input(type='email', name='_replyto', placeholder='Sign Up For Early Access', required)
                 input#next-field(type="hidden", name="_next", value='')
                 button.button(type='submit') Submit
-    
+
+      section.index-features
+        .container
+          h2.center INTELLIGENCE DRIVEN PLATFORM
+            br
+            | FOR INVESTING AND M&amp;A
+          .flex
+            .flex-1
+              .center
+                img(src="assets/img/enterprises.png", alt="Enterprises")
+                h3.uppercase Enterprises
+              ul
+                li Mergers &amp; Acquisitions
+                li Acqui-hiring
+                li Startups Financial Data
+            .flex-1
+              .center
+                img(src="assets/img/startups.png", alt="Startups")
+                h3.uppercase Startups
+              ul
+                li Fundraise from Financial Investors and Strategic Corporates
+                li Investment Advisory: Valuation, Funding Readiness
+                li Peer Comparison Data
+            .flex-1
+              .center
+                img(src="assets/img/financial-investors.png", alt="Financial Investors")
+                h3.uppercase Financial Investors
+              ul
+                li Personalized Investment Sourcing
+                li Startups Financial Data
+
     script.
       window.onload = function() {
         document.getElementById('next-field').value = window.location.href + '?submit=true';

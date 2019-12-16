@@ -12,6 +12,22 @@
   color: $blue !important;
 }
 
+.white {
+  color: $f !important;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
 .button {
   display: inline-block;
   padding: 9px 13px;
@@ -33,4 +49,12 @@
     background-color: lighten($blue, 5%);
     border-color: lighten($blue, 5%);
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
 }
