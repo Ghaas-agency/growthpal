@@ -50,26 +50,39 @@ html(lang="en")
     meta(name='description', property='og:description', content='Intelligence Solutions that provide recommendations and deliver results for funding, acquisitions and investment, helping you close deals.')
   body
 
+    nav.nav
+      .container
+        .flex.justify-content-between
+          a(href="./")
+            img(src="assets/img/growthpal-logo-white.png", alt="GrowthPal logo")
+          ul(style="display: none;")
+            li
+              a(href="#!") About
+            li
+              a(href="#!") Products
+            li
+              a(href="/blog/") Blog
+
     main.index
 
       section.index-hero
         .container
           .index-hero__wrapper
-            img(src="assets/img/growthpal-logo.png", alt="GrowthPal logo", width="150")
-            p.italic Faster, Accessible, and Personalized Fundraising &amp; Acquisitions
-            h1.uppercase Intelligence That Delivers Results.
-            p.blue.subhead Actionable Recommendations. Closed Deals.
+            h1.uppercase.white Intelligence That Delivers Results.
+            p.white.subhead Actionable Recommendations.
+              br
+              | Closed Deals.
             .form-container
               form#contact-form(action='https://formspree.io/xnqnjedb', method='POST')
                 input(type='email', name='_replyto', placeholder='Sign Up For Early Access', required)
                 input#next-field(type="hidden", name="_next", value='')
-                button.button(type='submit') Submit
+                button.button.button-white(type='submit') Submit
 
       section.index-features
         .container
-          h2.center INTELLIGENCE DRIVEN PLATFORM
+          h2.center Intelligence Driven Platform
             br
-            | FOR INVESTING AND M&amp;A
+            | For Investing And M&amp;A
           .flex
             .flex-1
               .center

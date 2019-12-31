@@ -1,27 +1,23 @@
 .index {
+  margin-top: -84px;
+
   &-hero {
     position: relative;
     height: 100vh;
     max-height: 700px;
-    background-image: url('../img/growthpal-index-hero.png');
-    background-position: calc(50% + 500px) center;
+    background-image: url('../img/growthpal-index-hero.jpg');
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 900px;
+    background-size: cover;
 
-    @media only screen and (max-width: 979px) {
-      background-position: calc(50% + 300px) 100px;
-      background-size: 700px;
-    }
+    @media only screen and (max-width: 480px) {
+      background-position: 55% center;
+      background-size: cover;
+      max-height: 500px;
 
-    @media only screen and (max-width: 767px) {
-      background-image: url('../img/growthpal-index-hero-mobile.png');
-      background-position: center 125%;
-      background-size: 500px;
-    }
-
-    @media only screen and (max-width: 380px) {
-      background-position: center 115%;
-      background-size: 400px;
+      input {
+        display: block;
+      }
     }
 
     .container {
@@ -34,12 +30,13 @@
       max-width: 600px;
       padding-top: 180px;
 
-      @media only screen and (max-width: 979px) {
-        padding-top: 50px;
+      @media only screen and (max-width: 767px) {
+        padding-top: 100px;
       }
 
       @media only screen and (max-width: 480px) {
-        padding-top: 25px;
+        padding-top: 75px;
+        max-width: 70%;
       }
 
       h1 {
@@ -53,6 +50,17 @@
         input,
         button {
           margin: 7px;
+        }
+
+        input {
+          color: $f;
+          background: transparent;
+          border-color: $f;
+
+          &::placeholder {
+            font-size: 0.9em;
+            color: lighten($blue, 50%);
+          }
         }
       }
 
@@ -69,35 +77,30 @@
   }
 
   &-features {
-    background-color: $blue;
     padding: 100px 0;
 
+    @media only screen and (max-width: 767px) {
+      padding: 50px 0;
+    }
+
     * {
-      color: $f;
+      color: $blue;
     }
 
     .flex {
-      margin: 50px -30px 0;
-
-      @media only screen and (max-width: 979px) {
-        margin: 50px -15px 0;
-      }
+      margin: 50px -10px 0;
 
       @media only screen and (max-width: 767px) {
         flex-direction: column;
       }
 
       .flex-1 {
-        margin: 0 30px;
+        margin: 0 10px;
         padding: 30px 20px;
         box-shadow: 0 3px 10px rgba(#000000, 0.25);
 
-        @media only screen and (max-width: 979px) {
-          margin: 0 15px
-        }
-
         @media only screen and (max-width: 767px) {
-          margin: 15px;
+          margin: 15px 10px;
         }
 
         img {

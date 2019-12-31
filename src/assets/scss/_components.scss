@@ -28,9 +28,13 @@
   text-align: center !important;
 }
 
+.right {
+  text-align: right !important;
+}
+
 .button {
   display: inline-block;
-  padding: 9px 13px;
+  padding: 9px 17px;
   background-color: $blue;
   border: 1px solid $blue;
   border-radius: 3px;
@@ -49,6 +53,12 @@
     background-color: lighten($blue, 5%);
     border-color: lighten($blue, 5%);
   }
+
+  &-white {
+    background-color: $f;
+    border: 1px solid $f;
+    color: $blue;
+  }
 }
 
 .flex {
@@ -57,4 +67,8 @@
 
 .flex-1 {
   flex: 1;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
 }
